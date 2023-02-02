@@ -47,6 +47,8 @@ class PlayerRepositoryTest {
 
     @Test
     public void testFindPlayerByName() {
+        Player p = playerRepository.findPlayerByName("aa");
+        assertEquals("aa",p.getName());
         // Q1: Write this test if you can. If not implement the missing parts
         // Q2: Can You find player "dd" if this test runs after the previous test
     }
