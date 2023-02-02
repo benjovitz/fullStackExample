@@ -28,8 +28,8 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
-          path:
-            retention-days: 1
+          path: '${{ github.workspace }}/target/*.jar'
+          retention-days: 1
 
   deploy:
     runs-on: ubuntu-latest
